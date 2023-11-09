@@ -6,29 +6,3 @@
     flex-direction: column;
     gap: 14px;
 }
-
-.item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid grey;
-
-    gap: 15px;
-}
-
-.status{
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: grey;
-}
-
-.online{
-    background-color: green;
-}
-
-.offline{
-    background-color: red;
-}

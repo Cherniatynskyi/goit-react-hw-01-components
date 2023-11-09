@@ -5,17 +5,17 @@ import { Transactions } from "./Transactions/Transactions";
 
 
 
-import userData from '../user.json'
-import data from '../data.json'
-import friends from '../friends.json'
-import transactions from '../transactions.json'
+import user from '../data/user.json'
+import data from '../data/data.json'
+import friends from '../data/friends.json'
+import transactions from '../data/transactions.json'
 
 function App() {
  return (
     <div>
-     <Profile props={userData} />
-     <Statistics title="upload stats" stats={data} />
-     <FriendList props={friends} />
+     <Profile username={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats} />
+     <Statistics title="Upload stats" stats={data} />
+     <FriendList friends={friends} />
      <Transactions items={transactions} />
     </div>)
 }
